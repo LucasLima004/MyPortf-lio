@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+}
+html{
+    overflow-x: hidden;
+}
+
+/*Background*/
+.backgroundSheet{
+   background-image: radial-gradient( at top left, rgb(63, 64, 69), #15192e,black);
+    width: 100%;
+    height: 100%;
+   position: fixed;
+}
+.container{
+    width: 100vw;
+    height:110vh;
+}
+
+
+
+/*Aside name*/
+#positionSide{
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    animation: container 3.2s;
+}
+#side{
+    color: white;
+    text-shadow: 2px 2px solid black;
+    transform: rotate(270deg);
+}
+
+/*Introductory texts*/
+.LogoCenter{
+    color: white;
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    font-size:7vw;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.8);
+    white-space: nowrap;
+}
+.middleCenterName{
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-family: sans-serif;
+    font-size: 2vw;
+}
+.topCenterName{
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    top: 35%;
+    left: 16%;
+    font-size: 2vw;
+}
+.bottomCenterName{
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    font-size: 2vw;
+}
+
+
+
+
+
+
+
+/*Animação auxiliar*/
+@keyframes container{
+    0%{ opacity: 0;}
+    99%{opacity: 0;}
+    100%{ opacity: 1;}
+} 
+
+
+
+
+
+
+
+/*Scroll bar*/
+::-webkit-scrollbar-track {
+    background-color: #070707;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #3b3b3b;
+}
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+}
+
+
+/*Container with text*/
+.containerBodyText p{
+    width: 100%;
+    height: 100px;
+}
+.containerBodyText{
+    animation: container 3.0s;
+    position: relative;
+    font-family: sans-serif; 
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+
+
+
+
+
+/*Container with contact and the form*/
+#container_contact_text{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-column-gap: 50px;
+    justify-content: center;
+    margin-top: 100px;
+}
+.flex{
+    animation: container 3.0s;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.contact_text{
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 100px;
+    color: white;
+    margin-top: 50px;
+}
+.contact_form{
+    width: 110%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+form{
+    width: 80%;
+    display:flex;
+    position: relative;
+    padding-left: 10%;
+    flex-direction: column;
+    justify-content:center;
+    border-style:none;
+}
+form input  {
+    color: White;
+    background-color: transparent;
+    border-style:none;
+    height: 25px;
+}
+form textarea{
+    color: White;
+    background-color: transparent;
+    border-style:none;
+}
+hr{
+    opacity: 0.4;
+}
+form button{
+    color: White;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    border-style:none;
+    height: 25px;
+}
+form button:hover{
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+}
+
+
+
+
+
+
+/*Card animados*/
+#text_container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: container 3.5s;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    justify-content: center;
+    padding: 100px;
+}
+.userCard{
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userCard img{
+    position: relative;
+    transition: transform .75s;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+.userCard img:hover {
+    transform: scale(1.1);
+    opacity: 0.4;
+}
+.userCard h1{
+    position:absolute;
+    color: white;
+}
+[data-anime] {
+    opacity: 0;
+    transform: translateY(+450px);
+    transition: 1.2s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+} 
+[data-anime].animate {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1.2s;
+    animation-duration: 1s;
+    animation-fill-mode:both;
+}
+
+
+/*Card text*/
+#aboutCard{
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 30px;
+}
+
+
+/*Footer division*/
+footer{
+    background: #00001b;
+    color: #fff;
+    border-top: solid 2px rgb(58, 58, 58);
+    border-bottom: solid 5px rgb(65, 65, 65);
+    width: 100%;
+    height: 180px;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    animation: container 3.5s;
+}
+
+
+
+
+
+/*General menu*/
+#menu{
+    position: fixed;
+    animation: container 3.2s;
+}
+
+/*Logo social media*/
+#socialMedia{
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+}
+
+
+/*Side logo*/
+#logo{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+/*Right Menu*/
+#menuRight{
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
+#menuRight a{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#menuRight a:hover{
+    background-color: #3b3b3b;
+}
+
+
+
+
+
+/*Carrosel de projetos*/
+#carouselMain{
+    animation: container 3.2s;
+    width: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 20%;
+    right: 20%;
+    justify-content: center;
+}
+#myCarousel .carousel-inner, #myCarousel .carousel-item{
+    height: 50vh;
+    border-radius: 20px;
+}
+#myCarousel .carousel-inner img, #myCarousel .carousel-item img{
+    opacity: 0.4;
+}
+.main-btn{
+    position: relative;
+    margin-bottom: 50px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+.main-btn:hover{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
+.carousel-indicators .active{
+    background-color: white;
+}
+
+
+
+
+
+/*Animação inicial*/
+.logoAnimation{
+    width: 140%;
+    height: 100%;
+    position: fixed;
+    left: -15%;
+    background-color: black;
+    animation: logo 5s;
+    opacity: 0;
+}
+.containerAnimation img{
+    position: fixed;
+    top: 30%;
+    left: 42%;
+}
+
+@keyframes logo{
+    0%{ opacity: 1;}
+    50%{opacity: 1;transform: scale(1);}
+    100%{ opacity: 0;transform: scale(1.5);}
+}
+
+
