@@ -3,7 +3,7 @@
 <p align="center">
     <img src="https://user-images.githubusercontent.com/99892157/166393950-a249134d-a59c-4fd7-b9fa-d14d8a0455b9.svg" width="100px"/>
 </p>
-<h3 align="center">Projeto de ligação utilizando CLP e programação em bloco Ladder.</h3>
+<h3 align="center">Fully responsive and dynamic alpha studio website design.</h3>
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Development-green"/>
   <img src="https://img.shields.io/github/issues/LucasLima004/MyPortf-lio"/>
