@@ -404,6 +404,7 @@ footer{
 @media only screen and (max-device-width: 500px)  {
     #socialMedia img{
         width: 50px;
+        padding-top: 50px;
     }
     #logo{
         width: 150px;
