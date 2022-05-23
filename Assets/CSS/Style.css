@@ -400,3 +400,47 @@ footer{
 }
 
 
+/*Responsivity*/
+@media only screen and (max-device-width: 500px)  {
+    #socialMedia img{
+        width: 50px;
+    }
+    #logo{
+        width: 150px;
+    }
+    .flex{
+        display: block;
+    }
+    .contact_form{
+        align-items: center;
+        width: 90%;
+    }
+    #text_container{
+        left: 0;
+    }
+    #grid{
+        display: block;
+        position: relative;
+        padding-left: 40%;
+    }
+    .userCard{
+        width: 50%;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    #carouselMain{
+        width: 80%;
+        left: 10%;
+    }
+    .contact_text{
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 50px;
+    }
+    .middleCenterName{
+        top: 50%;
+    }
+    .bottomCenterName{
+        top: 55%;
+    }     
+}
