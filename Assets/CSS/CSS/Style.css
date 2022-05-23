@@ -338,7 +338,7 @@ footer{
     justify-content: center;
 }
 #myCarousel .carousel-inner, #myCarousel .carousel-item{
-    height: 50vh;
+    height: 250px;
     border-radius: 20px;
 }
 #myCarousel .carousel-inner img, #myCarousel .carousel-item img{
