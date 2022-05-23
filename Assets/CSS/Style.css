@@ -287,6 +287,9 @@ footer{
 }
 
 /*Logo social media*/
+#socialMedia img{
+    width:25px;
+}
 #socialMedia{
     position: fixed;
     bottom: 40px;
@@ -297,6 +300,7 @@ footer{
 /*Side logo*/
 #logo{
     position: fixed;
+    width: 80px;
     top: 10px;
     left: 10px;
 }
