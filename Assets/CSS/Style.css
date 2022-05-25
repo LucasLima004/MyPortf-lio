@@ -75,7 +75,7 @@ html{
 
 
 
-/*Animação auxiliar*/
+/*Auxiliary animation*/
 @keyframes container{
     0%{ opacity: 0;}
     99%{opacity: 0;}
@@ -197,7 +197,7 @@ form button:hover{
 
 
 
-/*Card animados*/
+/*Animated cards*/
 #text_container{
     width: 100%;
     height: 100%;
@@ -330,7 +330,7 @@ footer{
 
 
 
-/*Carrosel de projetos*/
+/*Project carousel*/
 #carouselMain{
     animation: container 3.2s;
     width: 60%;
@@ -377,12 +377,13 @@ footer{
 
 
 
-/*Animação inicial*/
+/*Initial animation*/
 .logoAnimation{
     width: 140%;
-    height: 100%;
+    height: 150%;
     position: fixed;
     left: -15%;
+    top: -20%;
     background-color: black;
     animation: logo 5s;
     opacity: 0;
@@ -390,7 +391,7 @@ footer{
 .containerAnimation img{
     position: fixed;
     top: 30%;
-    left: 42%;
+    left: 40%;
 }
 
 @keyframes logo{
@@ -400,14 +401,170 @@ footer{
 }
 
 
+/*Hamburguer menu*/
+.containerUser {
+    animation: container 3.2s;
+    max-width: 1050px;
+    width: 90%;
+    margin: auto;
+}
+  
+.navbarUser {
+    width: 100%;
+}
+  
+.nav-containerUser {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+  
+.navbarUser .menu-items {
+    display: flex;
+}
+  
+.navbarUser .nav-containerUser li {
+    list-style: none;
+}
+  
+.navbarUser .nav-containerUser a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+  
+.navbarUser .nav-containerUser a:hover{
+      font-weight: bolder;
+}
+  
+.nav-containerUser {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+  
+.nav-containerUser .checkbox {
+    position: fixed;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+.nav-containerUser .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: fixed;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.nav-containerUser .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+}
+  
+  .nav-containerUser .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+  
+.nav-containerUser .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+  
+.nav-containerUser .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+  
+.navbarUser .menu-items {
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+  
+.navbarUser .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+  
+.logoRight{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+  
+.nav-containerUser input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+}
+  
+.nav-containerUser input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+  
+.nav-containerUser input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+  
+.nav-containerUser input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+  
+.nav-containerUser input[type="checkbox"]:checked ~ .logoRight{
+    display: none;
+}
+.displayNone{
+    animation: container 3.2s;
+    display: none;
+}  
+
+
+
+
+
+
+
+
+
+
 /*Responsivity*/
 @media only screen and (max-device-width: 500px)  {
+    .displayNone{
+        display: block;
+    }  
+    #menuRight{
+        display: none;
+    }
     #socialMedia img{
-        width: 50px;
-        padding-top: 50px;
+        display:none;
     }
     #logo{
-        width: 150px;
+        display:none;
     }
     .flex{
         display: block;
@@ -422,10 +579,11 @@ footer{
     #grid{
         display: block;
         position: relative;
-        padding-left: 40%;
+        padding-left: 25%;
+
     }
     .userCard{
-        width: 50%;
+        width: 80%;
         margin-top: 20px;
         border-radius: 10px;
     }
@@ -434,6 +592,7 @@ footer{
         left: 10%;
     }
     .contact_text{
+        font-size: 1.5em;
         padding-left: 100px;
         padding-right: 100px;
         padding-bottom: 50px;
