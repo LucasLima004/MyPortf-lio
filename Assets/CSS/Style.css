@@ -433,7 +433,8 @@ footer{
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 3rem;
+    text-shadow: #070707;
     padding: 0.7rem;
 }
   
@@ -509,8 +510,7 @@ footer{
 }
   
 .navbarUser .menu-items li {
-    margin-bottom: 1.2rem;
-    font-size: 1.5rem;
+    margin-bottom: 3rem;
     font-weight: 500;
 }
   
