@@ -422,6 +422,7 @@ footer{
   
 .navbarUser .menu-items {
     display: flex;
+    position: fixed;
 }
   
 .navbarUser .nav-containerUser li {
@@ -449,8 +450,8 @@ footer{
 .nav-containerUser .checkbox {
     position: fixed;
     display: block;
-    height: 32px;
-    width: 32px;
+    height: 100px;
+    width: 100px;
     top: 20px;
     left: 20px;
     z-index: 5;
@@ -460,8 +461,8 @@ footer{
   
 .nav-containerUser .hamburger-lines {
     display: block;
-    height: 26px;
-    width: 32px;
+    height: 75px;
+    width: 100px;
     position: fixed;
     top: 17px;
     left: 20px;
@@ -473,7 +474,7 @@ footer{
   
 .nav-containerUser .hamburger-lines .line {
     display: block;
-    height: 4px;
+    height: 8px;
     width: 100%;
     border-radius: 10px;
     background: #0e2431;
